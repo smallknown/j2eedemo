@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>servlet.UserServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserListServlet</servlet-name>
+    <servlet-class>servlet.UserListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UserListServlet</servlet-name>
+    <url-pattern>/UserListServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditServlet</servlet-name>
+    <servlet-class>servlet.EditServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>servlet.UpdateServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditServlet</servlet-name>
+    <url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>servlet.DeleteServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>QueryServlet</servlet-name>
+    <servlet-class>servlet.QueryServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>QueryServlet</servlet-name>
+    <url-pattern>/QueryServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
