@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1 style="color:green;" align="center">${msg}</h1>
+<h1 style="color:red;" align="center">${msg}</h1>
 </body>
 </html>

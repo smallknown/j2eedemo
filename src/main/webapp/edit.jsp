@@ -5,6 +5,10 @@
   Time: 下午2:43
   To change this template use File | Settings | File Templates.
 --%>
+<!DOCTYPE html>
+<script type="text/javascript" src="bootstrap/js/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<link href="bootstrap/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri ="http://java.sun.com/jsp/jstl/core"%>
 <html>
@@ -16,7 +20,7 @@
 <form action="<c:url value='/UpdateServlet'/>" method="post" >
     <input type="hidden" name="method" value="edit"/>
     <input type="hidden" name="id" value="${user.id}"/>
-    <table border="0" align="center" width="40%" style="margin-left: 100px">
+    <table border="0" align="center"  style="width:600px; margin:44px auto"  class="table">
         <tr>
             <td width="100px">客户名称</td>
             <td width="40%">
@@ -68,8 +72,8 @@
         <tr>
             <td></td>
             <td>
-                <input type="submit" name="submit" value="编辑客户"/>
-                <input type="reset" name="reset"/>
+                <input type="submit" name="submit" value="编辑客户" class="btn btn-primary"/>
+                <input type="reset" name="reset" class="btn btn-default"/>
             </td>
         </tr>
     </table>

@@ -9,7 +9,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-    <title>客户关系</title>
+    <title>学生信息管理</title>
 </head>
 <frameset rows="20%,*">
     <frame src="<c:url value='/top.jsp'/>" name="top"/>

@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/12/11.
+ * Created by tracy on 2017/10/9.
  */
 public class UserListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,9 +48,8 @@ public class UserListServlet extends HttpServlet {
         if (users.size()>0){
             request.getRequestDispatcher("/list.jsp").forward(request, response);
         }else {
-            response.sendRedirect("/msg.jsp");
-           /* request.setAttribute("msg", "暂无数据");
-            request.getRequestDispatcher("/msg.jsp").forward(request, response);*/
+            request.setAttribute("msg", "暂无数据");
+            request.getRequestDispatcher("/error.jsp").forward(request, response);
         }
     }
 

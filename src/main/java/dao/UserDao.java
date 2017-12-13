@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/12/11.
+ * Created by tracy on 2017/10/9.
+ * 操作数据库
  */
 public class UserDao {
     /**

@@ -1,5 +1,9 @@
 package bean;
 
+/**
+ * Created by tracy on 2017/10/9.
+ * 分页使用的类
+ */
 public class Page {
 
 	int start=0;
